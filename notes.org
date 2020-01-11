@@ -1,0 +1,11 @@
+* Notes for learning Angular Material
+** Installing Angular Material into an Angular project
+   ng add @angular/material
+** Ensure that you've imported the proper module into app.module.ts
+   To use any components, check the API documentation to see which modules need to be
+   imported for which components.
+   Make sure to add to the imports array.
+** A better option than keeping track of imports as above...
+   Create a separate module to only import all of the material design submodules.
+   Add the new module (i.e. 'material.module.ts') to the ngModule of your main app.
+   This new module should import/export each needed material module.
